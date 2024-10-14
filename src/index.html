@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica Docker y NGINX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    main {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    ul {
+      margin: 20px 0;
+    }
+    li {
+      font-size: 1.1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #2c3e50;
+      color: white;
+    }
+    td {
+      background-color: #fff;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #2c3e50;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Practica Docker y NGINX</h1>
+  <p>1ra práctica con Docker y NGINX - Aprendiendo los fundamentos</p>
+</header>
+
+<main>
+  <section>
+    <h2>Objetivo de la práctica</h2>
+    <p>En esta primera práctica, se ha aprendido a crear un contenedor Docker con la imagen de NGINX para servir una página HTML estática.</p>
+  </section>
+
+  <section>
+    <h2>Pasos realizados</h2>
+    <ol>
+      <li>Instalación de Docker.</li>
+      <li>Creación del archivo Dockerfile.</li>
+      <li>Configuración de NGINX para servir archivos estáticos.</li>
+      <li>Mapeo de archivos locales a contenedor Docker.</li>
+      <li>Verificación de la configuración desde el navegador.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Contenido del proyecto</h2>
+    <ul>
+      <li>Dockerfile: Archivo con configuración para construir la imagen.</li>
+      <li>docker-compose.yml: Configuración para orquestar el contenedor.</li>
+      <li>index.html: Archivo HTML servido por NGINX.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Detalles de la práctica</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Comando</th>
+          <th>Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>docker build -t nginx-demo .</td>
+          <td>Crea la imagen Docker con NGINX.</td>
+        </tr>
+        <tr>
+          <td>docker-compose up -d</td>
+          <td>Levanta el contenedor en segundo plano.</td>
+        </tr>
+        <tr>
+          <td>docker compose down</td>
+          <td>Detiene y elimina los contenedores y redes.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 - Práctica Docker y NGINX | Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
